@@ -1,0 +1,892 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,500;1,700;1,900&display=swap');
+
+
+html{
+    /* 100% = 16px */
+    /*(100 / 16) * 10 = 6,5*/
+    font-size: 62,5%;
+    scroll-behavior: smooth; 
+}
+
+body {
+    background: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/*
+#container {
+
+    width: 100%;
+    padding: 0 2.5%;
+    margin: 0 auto;
+}
+
+main p {
+    font-size: 1.6rem;
+    padding: 0.5rem;
+    line-height: 2rem;
+}
+*/
+/* >>> Menu <<< */
+/*
+#name{
+    color: #fff;
+    font-weight: bolder;
+    padding-left: 8px;
+    font-size: 1.2rem;
+}
+
+
+#logo{
+    display: list-item;
+    align-items: center;
+    text-align: center;  
+    margin: 4px;
+}
+
+nav {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: stretch;
+    background: #0b2e59;
+    padding: 0 1%;
+    
+}
+
+ul li {
+    display: inline-block;
+
+}
+
+li a {
+   color: #fff; 
+   text-decoration: none;
+   margin: 5px;
+   font-size: 1em;
+}
+*/
+
+#logomarca {
+    margin-top: 15px;
+    margin-left: 10px;
+    float: left;
+}
+
+#name{
+    color: #fff;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    display: inline-block;
+    margin-left: 8px;
+    margin-top: 30px;
+}
+
+
+#menu {
+    background:#0b2e59;
+    height: 80px;
+    width: 100%;  
+    box-sizing: border-box; 
+    clear: both;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 1rem;
+    padding: 7px 8px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: rgb(115, 139, 175);
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    margin-right: 30px;
+    cursor: pointer;
+	display: none;
+}
+#check {
+	display: none;
+}
+/* >>> Hearder <<< */
+
+figure #banner {
+    position: relative;
+    width: 100%;
+    margin: auto;
+}
+
+#phrasesBanner {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+
+h1, h2 {
+    background-color: rgb(0,0,0,0.5);
+    padding: 8px;
+    color: #fff;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 1.2em;
+}
+
+#buttonDeputados {
+    border: none;
+    padding: 24px 46px;
+    border-radius: 10%;
+    font-size: 0.6em;
+    background: #0b2e59;
+    color: #fff;
+    font-weight: bolder;
+    cursor: pointer;
+    text-decoration: none;
+    position: absolute;
+    text-align: center;
+    top: 65%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-size: 1em;
+    
+}
+
+
+#buttonDeputados:hover{
+    color: rgb(115, 139, 175);
+}
+
+/*  >>>>>>>>>>>>>>>>>>>>>>>>
+                                 Conteudo          
+                                                <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+
+/* >>> Titulos<<< */
+
+section {
+    width: 80%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+
+}
+
+section h3 {
+    font-size: 2em;
+    font-weight: bolder;
+    margin: 6%;
+    color: #0b2e59 ;
+    text-shadow: 2px 2px #5189ce;
+}
+
+section p {
+    font-size: 1.2em;
+    color: #0b2e59;
+    margin: 2%;
+    font-weight: bolder;
+}
+
+section input {
+    width: 27.8%;
+    padding-left: 1%;
+    margin-bottom: 10px;
+    padding: 0.8% 1%;
+}
+
+
+section button{
+    width: 30%;
+    background: #0b2e59;
+    color: #fff;
+    font-weight: bolder;
+    cursor: pointer;
+    border: none; 
+    padding: 10px 0;
+}
+
+section button:hover{
+    color: #0b2e59; 
+    background: #fff;
+    border: #0b2e59 solid 2px;
+    padding: 8px 0%;
+}
+
+.dp h4,
+.dp figcaption,
+.dp span {
+    font-weight: bold;
+}
+
+.listParties figcaption {
+    margin: 8%;
+}
+
+/* >>> DEPUTADOS <<< */
+
+
+main {
+    max-width: 80%;
+    width: 80%;
+    padding: 0 2.5%;
+    margin: 0 auto;
+    max-width: 1170px;
+    text-align: center;
+}
+
+aside{
+    margin-top: 30%;
+
+}
+
+
+.imgDep{
+    width: 70%;
+}
+
+.broken {
+    width: 100%;
+}
+
+.contentsDeputies, .parties {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    column-gap: 2%;
+}
+
+.deputies, .broken {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: stretch;
+    
+}
+
+.description, dp ul {
+    margin: 10px;
+}
+
+ul .list {
+    margin: 20px 60px;
+    display: list-item;
+    list-style: circle;
+    text-align: left;
+}
+
+.network svg {
+    width: 8%;
+
+}
+
+.network {
+    align-items: center;
+    text-align: center;
+}
+
+.imgDep:hover {
+    transform: scale(1.2);
+}
+
+.logoParts img:hover,
+.network svg:hover {
+    transform: scale(1.2);
+    filter: grayscale(100%);
+}
+
+/* >>> TABELAS <<< */
+
+aside table {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+
+}
+
+table th {
+    background: #0b2e59; 
+    color: #fff;
+    padding: 0.8%;
+    text-align: center;
+    border-right: 1px solid #fff;
+    
+}
+
+.resultTable {
+    font-weight: bold; 
+}
+
+table td {
+    padding: 10px 30px;
+    text-align: center;
+}
+
+tr:nth-child(even){background-color: #e7e7f7;}
+
+.fraseTable {
+    margin: 3%;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* >>> NOTICIAS  <<< */
+
+#newsColumn img{
+    width: 85%;
+}
+
+
+#newsColumn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+#textColumn{
+    width: 60%;
+}
+
+#textColumn h4{
+    margin: 20px auto 60px auto;
+    font-size: 1rem;
+}
+
+#textColumn p{
+    margin: 30px auto;
+    width: 60%;
+}
+
+.buttonColum{
+    width: 65%;
+    background: #0b2e59;
+    color: #fff;
+    font-weight: bolder;
+    cursor: pointer;
+    border: none; 
+    padding: 1.5% 0%;
+}
+
+.buttonColum:hover{
+    color: #0b2e59; 
+    background: #fff;
+    border: #0b2e59 solid 2px;
+    padding: 8px 0%;
+}
+/*>>>>>>>>>>>> PLENARIA <<<<<<<<<<*/
+
+iframe {
+    width: 100%;
+    height: 550px;
+}
+
+#plenario {
+    width: 100%;
+    display: flex;
+    gap: 0.6%;
+    margin: 15px 0;
+    justify-content: center;
+    font-size: 1.2em;
+}
+
+#plenario p {
+    text-decoration: underline;
+}
+
+#plenario p span {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* >>>>>>>>>>>> CONTATO <<<<<<<<<<< */
+
+#conteinerContato {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 50px;
+    gap: 2%;
+    
+}
+
+#inputs {
+    margin: 8px;
+    padding: 8px;
+    display: flex;
+    flex-direction:column;
+}
+
+#nome, #email, #telefone  {
+    width: 120%;
+    height: 30px;
+    margin: 8px;
+    border: 2px solid #ddd;
+
+    border-radius: 15px;
+}
+
+#nome {
+    margin-top: 30px;
+}
+
+#mensagem {
+    width: 120%;
+    height: 150px;
+    margin: 8px 8px 0px 8px;
+    border: 2px solid #ddd;
+
+}
+
+
+input, textarea {
+    padding-left: 20px;
+    font-size: 1.2em;
+    font-family: 'Times New Roman', Times, serif;
+    border: 2px solid #6f2f28;
+}
+
+/* >>> Botão Enviar Formulario <<< */
+
+
+#enviar {
+	color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: bolder;
+    background: #0b2e59;
+    padding: 6px;
+    margin: 8px;
+    width: 128%;
+}
+
+#enviar:hover {
+    color: #0b2e59; 
+    background: #fff;
+    border: #0b2e59 solid 2px;
+    padding-bottom: 2px;
+}
+
+
+
+
+/* >>>> Informações Contato <<<<<< */
+
+#contato {
+    text-align: left; 
+    flex-direction: column;
+    margin: 20px;
+    margin-left: 20%;
+    width: 50%;
+}
+
+#contato h3 {
+    font-size: 1.4em;
+    margin: 40px 30px;
+    font-weight: bolder;
+}
+#contato p {
+    margin-left: 30px;
+}
+
+#contato ul {
+    list-style: circle;
+    margin-left: 30px;
+    text-decoration: underline;
+}
+
+#contato ul li {
+    margin-top: 15px;
+}
+
+
+/*>>>>>> FOOTER <<<<<<*/
+
+footer img {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+footer {
+    background: #0b2e59;
+    line-height: 60px;
+    text-align: center;
+    color: #fff;    
+}
+
+footer label {
+    font-size: 1rem;
+}
+
+
+
+/* -------------- ASSESSMENT -------------------*/
+
+#questionario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    margin-top: 30px;
+}
+
+.resp--pessoais {
+    font-size: 1em;
+    color: red;
+    margin: 20px 0;
+}
+
+#questionario h4 {
+    font-size: 1.4em;
+    color: #0b2e59;
+    margin: 30px 0;
+    
+}
+
+.table--audios-sup{
+    margin-left: 30%;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+/* >>>>>>>>>>>>> MEDIA <<<<<<< */
+
+@media (max-width:480px) {
+
+    nav, header  {
+        width: 100%;
+}
+
+    table {
+	    overflow-x: scroll;
+}
+
+}
+/*-----------------------------------------------*/
+@media (max-width:600px) { 
+
+label {
+    font-size: 0.8em;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+h2 {
+    font-size: 0.8em;
+}
+
+section h3 {
+    font-size: 1.5em;
+}
+section p {
+    font-size: 1em;
+    margin: 4%;
+}
+
+#buttonDeputados {
+    padding: 16px 36px;
+}
+
+
+#buttonDeputados {
+ top: 38%;
+ left: 50%;
+ margin-right: -50%;
+ transform: translate(-50%, -50%);
+ font-size: 0.6em;
+}
+
+.deputies{
+    display: flex;
+    width: 100%;
+    gap: 0;
+    padding: 0;
+}
+
+.listParties{
+    font-size: 0.8em;
+    gap: 2%;
+}
+
+.listParties figcaption {
+    font-size: 0.8em;
+}
+
+.listParties img {
+    width: 60%;
+}
+
+.network img {
+    width: 12%;
+}
+
+ul .list {
+    margin: 4%;
+    padding: 1%;
+    text-align:center;
+    font-size: 0.8em;
+    align-items: center;
+}
+
+td, th {
+    font-size: 0.6em;
+}
+
+.imgDep{
+    width: 80%; 
+}
+
+section input,
+section buttom {
+    width: 50%;
+}
+
+iframe {
+    width: 100%;
+    height: 300px;
+}
+
+#textColumn{
+    font-size: 0.8em;
+
+}
+
+#newsColumn img {
+    width: 100%;
+}
+
+
+#newsColumn {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#textColumn p {
+    width: 100%;
+    
+}
+
+#textColumn h4,
+#textColumn p {
+    margin: 20px;
+}
+.buttonColum {
+    padding: 10px 0;
+}
+
+#plenario{
+    font-size: 0.8em;
+}
+
+
+#contato {
+    font-size: 0.8em;
+    width: 160%;
+}
+
+#contato h3{
+    margin: 20% 10%;
+}
+
+::placeholder {
+    font-size: 0.8em;
+}
+
+.table--audios-sup{
+    margin-left: 16%;
+}
+
+
+footer label {
+    font-size: 0.8em;
+}
+
+/*----------------------------------------------------------------*/
+
+}
+@media (max-width:801px) { 
+
+    h1 {
+        font-size: 1.5em;
+    }
+    
+    h2 {
+        font-size: 0.8em;
+    }
+    
+    section h3 {
+        font-size: 1.5em;
+    }
+    section p {
+        font-size: 1em;
+        margin: 4%;
+    }
+
+    #buttonDeputados {
+        top: 60%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+       }
+
+    #phrasesBanner{
+        top: 0%;
+    }
+
+    #buttonDeputados {
+        top: 40%;
+    }
+
+    .deputies{
+        display: flex;
+        width: 100%;
+        gap: 0;
+        padding: 0;
+    }
+    
+    .listParties{
+        font-size: 0.8em;
+        gap: 2%;
+    }
+    
+    .listParties img {
+        width: 60%;
+    }
+    
+    .network img {
+        width: 12%;
+    }
+    
+    ul .list {
+        margin: 4%;
+        padding: 1%;
+        text-align:center;
+        font-size: 0.8em;
+        align-items: center;
+    }
+
+    #newsColumn {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+    #contato {
+        font-size: 0.8em;
+        width: 160%;
+    }
+
+    iframe {
+        width: 100%;
+        height: 300px;
+    }
+    
+}
+
+/*------------------------------------------------------*/
+@media (max-width:1125px) {
+
+    #phrasesBanner{
+        top: 30%;
+    }
+
+    .listParties img {
+        width: 60%;
+    }
+    
+    .network img {
+        width: 12%;
+    }
+    
+    .checkbtn {
+        display: block;
+    }
+    
+    .checkbtn{
+        position: fixed;
+        z-index: 2;
+        right: 0;
+        top: 0;
+        background: #0b2e59;
+        border: 1px solid #fff;
+        margin-top: 20px;
+    }
+
+
+    nav ul{
+        position: fixed;
+        width: 40%;
+        height: 100vh;
+        background: rgba(30, 74, 131, 0.5);
+        right: -100%;
+        top: 0;
+        text-align: center;
+        transition: all .5s;
+        z-index: 1;
+    }
+    nav ul li{
+        display: block;
+        margin: 30px 0;
+        line-height: 20px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+    a:hover, a.active {
+        background: none;
+        color: #0b2e59;
+    }
+    #check:checked ~ ul {
+        right: 0;
+    }
+
+    #newsColumn {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+
+}

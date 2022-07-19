@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/print.css" media="print">
+    <link rel="stylesheet" href="./js/modernizr-custom.js">
+    <title>..:::Dados Abertos:::..</title>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <nav id="menu">
+                <img id="logomarca" src="./imagens/logo.png" alt="Imagem logo-marca">
+                <label id="name">dados abertos</label>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">&#x268c;</label>
+                <ul>
+                    <li><a href="index.html">INÍCIO</a></li>
+                    <li><a href="index.html#deputados">DEPUTADOS</a></li>
+                    <li><a href="index.html#partidos">PARTIDOS</a></li>
+                    <li><a href="index.html#bancadas">BANCADAS</a></li>
+                    <li><a href="index.html#noticias">NOTÍCIAS</a></li>
+                    <li><a href="index.html#plenaria">PLENÁRIA</a></li>
+                    <li><a href="index.html#contatos">CONTATO</a></li>
+                    <li><a href="assessment.html">ASSESSMENT</a></li>
+                </ul>
+            </nav>
+            <figure>
+                <img id="banner" src="./imagens/plenario-camara.png" alt="Imagem Plenario Camara">
+                <figcaption id="phrasesBanner">
+                    <h1>Minhas experiência na disciplina</h1>
+                    <h2>Dificuldades, facilidades, descobertas e afinidades <br>&<br> Questões sobre
+                        Design Responsivo e Multimídia na Web</h2>
+                    <!-- <button id="buttonDeputados">DEPUTADOS</button> -->
+                </figcaption>
+            </figure>
+        </header>
+        <main>
+            <section id="questionario">
+
+                <p class="inf--pessoais">Atualmente trabalho no gerenciamento administrativo de um concessionário, porem
+                    o meu principal objetivo é de poder migrar de área, que nesse caso seria a de TI. </p>
+                <p class="inf--pessoais">Acredito muito que as mudanças, os desafios e a confiança geram sabedoria para
+                    as conquistas, com isso promove a satisfação e o reconhecimento.</p>
+                <p class="inf--pessoais">A minha experiência é totalmente mínima na área de TI, sendo que o conteúdo da
+                    disciplina estou tendo o primeiro contato através da faculdade.</p>
+                <p class="inf--pessoais">A grande dificuldade da disciplina é o CSS, com o posicionamento dos elementos,
+                    colocar efeitos e principalmente para deixar o site responsivo, sendo que no HTML tenho mais
+                    facilidade em poder criar.</p>
+                <p class="inf--pessoais">Até o momento tive a oportunidade de compreender a parte do Front-end, como é
+                    estruturado e a principal função, como também a importância da acessibilidade.</p>
+
+                <h2>Design responsivo:</h2>
+
+                <ol>
+                    <li>
+                        <p class="inf--pessoais">Quando é recomendando a criação de um site separado para
+                                mobile? Seria este o caso deste site da Câmara de Deputados?</p>
+                        <p class="resp--pessoais">
+                            R. Nesse caso não há necessidade de ser separado, a opção seria um site responsivo, pois
+                            mesmo que a maioria da população utilize com mais frequência os celulares, dessa ira poder
+                            atender qualquer tipo de dispositivo. <br><br>
+                            A recomendação de um site separado para mobile é recomendado quando há funcionalidade de
+                            interação com usuários (Ex: Sites de Compra, Bancos), que ao invés da criação de aplicativos
+                            utilizam a criação de sites separado para ser parecidos no seu funcionamento, ou seja, o
+                            objetivo de manter separado é quanto quer utilizar um site parecido com um aplicativo.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p class="inf--pessoais">No caso de um CSS específico para impressão (print), como ele
+                                deve ser inserido?</p>
+
+                        <p class="resp--pessoais">
+                            R. O print trata-se de função para realizar a impressão das páginas, de uma forma que possa
+                            ocultar elementos desnecessários ou importantes. Os códigos de impressão são colocados na
+                            folha de estilos, podendo ser incluído dentro da tag como media=”print” ou dentro da folha
+                            de estilo “@media print { }”.
+                        </p>
+                    </li>
+                </ol>
+
+                <h2>Sobre multimídia Web:</h2>
+
+                <ol>
+                    <li>
+                        <p class="inf--pessoais"> O elemento áudio permite como elemento-filho o elemento
+                                source. Quais são os atributos que o source permite e qual conteúdo eles suportam? Quais
+                                os outros atributos do elemento áudio e quando devem ser utilizados?</p>
+                        <p class="resp--pessoais">
+                            R. A Tag source é utilizada para especificar múltiplos recursos de mídia de elementos:
+                            picture , audio ou video, e suporta os atributos globais em HTML, como: src, type e media.
+                        </p>
+
+                        <h4>Os atributos da tag audio são:</h4>
+
+                        <Table>
+                            <tr>
+                                <th>Atributo</th>
+                                <th>Valor</th>
+                                <th>Descrição</th>
+                            </tr>
+                            <tr>
+                                <td>autoplay</td>
+                                <td>autoplay</td>
+                                <td>Define que o audio começará a ser tocado assim que ele estiver pronto.</td>
+                            </tr>
+                            <tr>
+                                <td>controls</td>
+                                <td>controls</td>
+                                <td>Os controles serão mostrados.</td>
+                            </tr>
+                            <tr>
+                                <td>loop</td>
+                                <td>loop</td>
+                                <td>Define que o audio começará a ser tocado novamente quando terminar.</td>
+                            </tr>
+                            <tr>
+                                <td>preload</td>
+                                <td>preload</td>
+                                <td>Define que o audio será carregado enquanto a página é lida. Esse atributo é ignorado
+                                    caso o atributo autoplay estiver definido.</td>
+                            </tr>
+                            <tr>
+                                <td>src</td>
+                                <td>url</td>
+                                <td>URL do arquivo a ser tocado.</td>
+                            </tr>
+                        </Table>
+
+                        <h4>Formatos de áudios suportados:</h4>
+
+                        <Table class="table--audios-sup">
+                            <tr>
+                                <th>Formato de arquivo</th>
+                                <th>valor do atributo media</th>
+                            </tr>
+                            <tr>
+                                <td>MP3</td>
+                                <td>audio/mpeg</td>
+                            </tr>
+                            <tr>
+                                <td>OGG</td>
+                                <td>audio/ogg</td>
+                            </tr>
+                            <tr>
+                                <td>WAV</td>
+                                <td>audio/wav</td>
+                            </tr>
+
+                        </Table>
+
+                        <p>Fonte:<a href="https://www.w3schools.com/html/html5_audio.asp">W3Schools</a></p>
+                    </li>
+                    <li>
+                        <p class="inf--pessoais">O elemento vídeo permite como elemento-filho o elemento source.
+                                Quais são os atributos que o source permite e qual conteúdo eles suportam? Quais os
+                                outros atributos do elemento vídeo e quando devem ser utilizados?</p>
+
+                        <h4>Os atributos da tag video são:</h4>
+
+                        <Table>
+                            <tr>
+                                <th>Atributo</th>
+                                <th>Valor</th>
+                                <th>Descrição</th>
+                            </tr>
+                            <tr>
+                                <td>autoplay</td>
+                                <td>autoplay</td>
+                                <td>Especifica que o vídeo começará a ser reproduzido assim que estiver pronto</td>
+                            </tr>
+                            <tr>
+                                <td>controls</td>
+                                <td>controls</td>
+                                <td>Especifica que os controles de vídeo devem ser exibidos (como um botão
+                                    play/pause, etc.)</td>
+                            </tr>
+                            <tr>
+                                <td>loop</td>
+                                <td>loop</td>
+                                <td>Especifica que o vídeo recomeçará assim que terminar</td>
+                            </tr>
+                            <tr>
+                                <td>poster</td>
+                                <td>URL</td>
+                                <td>Especifica uma imagem a ser exibida até que o usuário inicie a reprodução</td>
+                            </tr>
+                            <tr>
+                                <td>muted</td>
+                                <td>muted</td>
+                                <td>Especifica que a saída de áudio do vídeo deve ser silenciada</td>
+                            </tr>
+                            <tr>
+                                <td>preload</td>
+                                <td>preload</td>
+                                <td>Especifica se e como o autor acha que o áudio deve ser carregado quando a
+                                    página for carregada</td>
+                            </tr>
+                            <tr>
+                                <td>src</td>
+                                <td>URL</td>
+                                <td>Especifica a URL do arquivo de áudio</td>
+                            </tr>
+                            <tr>
+                                <td>height</td>
+                                <td>Pixels</td>
+                                <td>Especifica a altura do vídeo</td>
+                            </tr>
+                            <tr>
+                                <td>width</td>
+                                <td>Pixels</td>
+                                <td>Especifica a altura do vídeo</td>
+                            </tr>
+                        </Table>
+
+                        <h4>Formatos de áudios suportados:</h4>
+
+                        <Table class="table--audios-sup">
+                            <tr>
+                                <th>Formato de arquivo</th>
+                                <th>valor do atributo media</th>
+                            </tr>
+                            <tr>
+                                <td>MP3</td>
+                                <td>video/mp4</td>
+                            </tr>
+                            <tr>
+                                <td>OGG</td>
+                                <td>video/webm</td>
+                            </tr>
+                            <tr>
+                                <td>WAV</td>
+                                <td>video/ogg</td>
+                            </tr>
+
+                        </Table>
+
+                        <p>Fonte:<a href="https://www.w3schools.com/html/html5_video.asp">W3Schools</a></p>
+                    </li>
+
+
+                    <li>
+                        <p class="inf--pessoais">No caso do canvas, HTML 5 nunca, em momento algum, fez qualquer
+                                animação. Isso porquê o HTML 5 é uma simples linguagem de marcação. Dessa forma, o que é
+                                necessário para criar animações com HTML5? O que são APIs do HTML5?</p>
+
+                        <p class="resp--pessoais">
+                            R. Todo o trabalho da criação de animação é feito com JavaScript e CSS. As APIS são usadas e
+                            acessadas normalmente com Java Script, são construções disponíveis na linguagem de
+                            programação que permite desenvolvedores criar funcionalidades complexas com mais
+                            facilidades.
+                        </p>
+                    </li>
+                    <li>
+                        <p class="inf--pessoais">Como o CSS3 pode ser aplicado na aparência da multimídia HTML5.
+                                Demonstre com um exemplo.</p>
+
+                        <p class="resp--pessoais">
+                            Pode ser aplicado atraves de ID, classe ou a propria TAG (audio ou video) do multimidia e
+                            dentro das chave aplica os estilos, conforme exemplo :<br><br>
+                            style {<br> <br>
+                            #multimidia--video { border: 2px solide black; width: 600px; }<br>
+                            .multimidia--video { border: 2px solide black; width: 600px; }<br>
+                            audio {border: 2px solide black; width: 600px; }<br>
+                            video {border: 2px solide black; width: 600px; }<br><br>
+                            }
+                        </p>
+                    </li>
+                </ol>
+
+            </section>
+
+        </main>
+        <footer>
+            <figure>
+                <a href="#container"><img src="./imagens/topo-botao.png" alt="Botão do Topo da Pagina"></a>
+            </figure>
+            <label>© Instituto Infnet - Assessment Interfaces com HTML e CSS</label>
+        </footer>
+    </div>
+</body>
+
+</html>
