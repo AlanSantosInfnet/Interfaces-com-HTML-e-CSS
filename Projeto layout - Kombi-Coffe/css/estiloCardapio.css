@@ -1,0 +1,39 @@
+:root{
+    --color-boder-imagnes-cardapio:  #bb9a68;
+    --color-text-th:                 #fff;   
+}
+
+tr:nth-child(even){background-color: #f2f2f2;}
+tr:hover {background-color: #bc9d76; color: #fff;}
+
+#tabelas {
+    width: 940px;
+    margin-top: 50px;
+    border: 2px solid #381506;
+    margin: 10px;
+}
+
+#tabelas tr td {
+    padding: 10px; 
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.3em;
+}
+
+#tabelas th {
+    text-align: left;
+    background-color: #381506;
+    color: var(--color-text-th);
+    padding: 20px;
+    text-align: center;
+    font-family: 'Righteous', cursive;
+    font-size: 1.6em;
+}
+
+td {
+    vertical-align: top;
+}
+
+.imagensCardapio {
+    border: 8px solid var(--color-boder-imagnes-cardapio);
+
+}

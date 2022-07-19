@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+#conteinerContato {
+    display: flex;
+    flex-direction: row;
+}
+
+#inputs {
+    margin: 8px;
+    padding: 8px;
+    display: flex;
+    flex-direction:column;
+}
+
+#nome, #email, #telefone  {
+    width: 400px;
+    height: 30px;
+    margin: 8px;
+    border: 2px solid #ddd;
+}
+
+#nome {
+    margin-top: 30px;
+}
+
+#mensagem {
+    width: 400px;
+    height: 100px;
+    margin: 8px 8px 0px 8px;
+    border: 2px solid #ddd;
+}
+
+
+input, textarea {
+    padding-left: 20px;
+    font-size: 1.2em;
+    font-family: 'Times New Roman', Times, serif;
+    border: 2px solid #6f2f28;
+}
+
+/* >>> Botão Enviar Formulario <<< */
+
+
+#enviar {
+	color: #d58543;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: bolder;
+    background: none;
+    padding: 6px;
+    margin: 8px;
+}
+
+#enviar:hover {
+	color: #ffd866;
+	background: #6f2f28;
+    padding: 6px;
+}
+
+/* >>>>Informações Contato <<<<<< */
+
+#contato {
+ text-align: left; 
+ flex-direction: column;
+ margin-left: 90px;
+ margin-top: 50px;
+}
+
+#contato h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2em;
+	margin: 2px;
+	color: #6f2f28;
+    
+}
+
+#contato p {
+    font-family: 'Jura', sans-serif;
+    text-align: left;
+    margin: 20px;
+}
+
+.altCor {
+    color: #d58543;
+}
+
+.contatoEmail {
+    text-decoration: underline;
+}
+
+#titleContato {
+    font-family: 'Jura', sans-serif;
+    font-size: 1.4em;
+
+}
